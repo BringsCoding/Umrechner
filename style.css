@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.umrechner {
+  display: flex;
+  justify-content: center;
+  background-color: #009688;
+  max-width: 1000px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+}
+
+.gleichheitszeichen {
+  margin-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.eingabefeld {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  border: solid 0.2rem lightgray;
+  max-width: 25%;
+}
+
+.umrechner input {
+  border: none;
+  border-bottom: 0.2rem solid lightgray;
+  appearance: none;
+}
+
+/*Other Broweser*/
+.umrechner input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.umrechner input:focus {
+  outline: none;
+}
+
+.umrechner input,
+.umrechner label {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+/* MediaQuery 650px */
+@media (max-width: 650px) {
+  .umrechner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .eingabefeld {
+    min-width: 105px;
+  }
+  .gleichheitszeichen {
+    margin-top: 1rem;
+  }
+}
