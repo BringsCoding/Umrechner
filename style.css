@@ -76,7 +76,7 @@ body {
     align-items: center;
   }
   .eingabefeld {
-    min-width: 105px;
+    max-width: 90%;
   }
   .gleichheitszeichen {
     margin-top: 1rem;
